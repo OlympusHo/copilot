@@ -1,19 +1,19 @@
-Frame 48: 586 bytes on wire (4688 bits), 586 bytes captured (4688 bits) on interface -, id 0
+Frame 15: 706 bytes on wire (5648 bits), 706 bytes captured (5648 bits) on interface -, id 0
     Section number: 1
     Interface id: 0 (-)
         Interface name: -
         Interface description: Standard input
     Encapsulation type: IEEE 802.11 plus radiotap radio header (23)
-    Arrival Time: May 29, 2025 20:03:17.370663000 中国标准时间
-    UTC Arrival Time: May 29, 2025 12:03:17.370663000 UTC
-    Epoch Arrival Time: 1748520197.370663000
+    Arrival Time: May 29, 2025 22:32:37.086542000 中国标准时间
+    UTC Arrival Time: May 29, 2025 14:32:37.086542000 UTC
+    Epoch Arrival Time: 1748529157.086542000
     [Time shift for this packet: 0.000000000 seconds]
-    [Time delta from previous captured frame: 0.041213000 seconds]
-    [Time delta from previous displayed frame: 0.102910000 seconds]
-    [Time since reference or first frame: 2.396383000 seconds]
-    Frame Number: 48
-    Frame Length: 586 bytes (4688 bits)
-    Capture Length: 586 bytes (4688 bits)
+    [Time delta from previous captured frame: 0.104019000 seconds]
+    [Time delta from previous displayed frame: 0.104019000 seconds]
+    [Time since reference or first frame: 1.230203000 seconds]
+    Frame Number: 15
+    Frame Length: 706 bytes (5648 bits)
+    Capture Length: 706 bytes (5648 bits)
     [Frame is marked: False]
     [Frame is ignored: False]
     [Protocols in frame: radiotap:wlan_radio:wlan]
@@ -113,12 +113,12 @@ Radiotap Header v0, Length 226
         ..0. .... .... .... = Static Turbo: False
         .0.. .... .... .... = Half Rate Channel (10MHz Channel Width): False
         0... .... .... .... = Quarter Rate Channel (5MHz Channel Width): False
-    Antenna signal: -14 dBm
+    Antenna signal: -13 dBm
     Antenna: 0
     Antenna signal: -13 dBm
     Antenna: 1
     timestamp information
-        timestamp: 2529763270
+        timestamp: 2899298596
         .... 0001 = time unit: usec (1)
         0000 .... = sampling position: first MPDU bit/symbol (0)
         .... ...1 = 32-bit counter: Yes
@@ -135,7 +135,7 @@ Radiotap Header v0, Length 226
     Channel: 128
     Frequency: 5640MHz
     Signal strength (dBm): -13 dBm
-    [Duration: 504µs]
+    [Duration: 664µs]
         [Preamble: 20µs]
 IEEE 802.11 Beacon frame, Flags: ........
     Type/Subtype: Beacon frame (0x0008)
@@ -168,11 +168,11 @@ IEEE 802.11 Beacon frame, Flags: ........
         .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
         .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
     .... .... .... 0000 = Fragment number: 0
-    0000 0001 0011 .... = Sequence number: 19
+    0010 1010 0100 .... = Sequence number: 676
     [WLAN Flags: ........]
 IEEE 802.11 Wireless Management
     Fixed parameters (12 bytes)
-        Timestamp: 76849049689
+        Timestamp: 85808742498
         Beacon Interval: 0.102400 [Seconds]
         Capabilities Information: 0x1931
             .... .... .... ...1 = ESS capabilities: Transmitter is an AP
@@ -191,7 +191,7 @@ IEEE 802.11 Wireless Management
             ..0. .... .... .... = EPD: Not Implemented
             .0.. .... .... .... = Reserved: 0
             0... .... .... .... = Reserved: 0
-    Tagged parameters (324 bytes)
+    Tagged parameters (444 bytes)
         Tag: SSID parameter set: "heaolin_new_2222G-5G"
             Tag Number: SSID parameter set (0)
             Tag length: 20
@@ -368,7 +368,7 @@ IEEE 802.11 Wireless Management
             Tag length: 5
             QBSS Version: 2
             Station Count: 0
-            Channel Utilization: 8 (3%)
+            Channel Utilization: 2 (0%)
             Available Admission Capacity: 31250 (1000000 us/s)
         Tag: HT Capabilities (802.11n D1.10)
             Tag Number: HT Capabilities (802.11n D1.10) (45)
@@ -627,14 +627,14 @@ IEEE 802.11 Wireless Management
                 ..0. .... .... .... = Channel Availability Query: False
                 .0.. .... .... .... = Fine Timing Measurement Responder: False
                 0... .... .... .... = Fine Timing Measurement Initiator: False
-            Extended Capabilities: 0x00 (octet 10)
+            Extended Capabilities: 0x40 (octet 10)
                 .... ...0 = FILS Capability: False
                 .... ..0. = Extended Spectrum Management Capable: False
                 .... .0.. = Future Channel Guidance: False
                 .... 0... = Preassociation discovery (PAD): 0x0
                 ...0 .... = Reserved: 0x0
                 ..0. .... = TWT Requester Support: False
-                .0.. .... = TWT Responder Support: False
+                .1.. .... = TWT Responder Support: True
                 0... .... = OBSS Narrow Bandwidth RU in OFDMA Tolerance Support: False
             Extended Capabilities: 0x00 (octet 11)
                 .... ...0 = Complete List of NonTxBSSID Profiles: False
@@ -645,6 +645,234 @@ IEEE 802.11 Wireless Management
                 ..0. .... = Mirrored SCS: False
                 .0.. .... = OCT: False
                 0... .... = Local MAC Address Policy: False
+        Ext Tag: HE Capabilities
+            Ext Tag length: 25 (Tag len: 26)
+            Ext Tag Number: HE Capabilities (35)
+            HE MAC Capabilities Information: 0x10441a080005
+                .... .... .... .... .... .... .... .... .... .... .... ...1 = +HTC HE Support: Supported
+                .... .... .... .... .... .... .... .... .... .... .... ..0. = TWT Requester Support: Not supported
+                .... .... .... .... .... .... .... .... .... .... .... .1.. = TWT Responder Support: Supported
+                .... .... .... .... .... .... .... .... .... .... ...0 0... = Dynamic Fragmentation Support: No support for dynamic fragmentation (0)
+                .... .... .... .... .... .... .... .... .... .... 000. .... = Reserved: 0x0
+                .... .... .... .... .... .... .... .... .... ..00 .... .... = Reserved: 0x0
+                .... .... .... .... .... .... .... .... .... 00.. .... .... = Trigger Frame MAC Padding Duration: 0 (0)
+                .... .... .... .... .... .... .... .... .000 .... .... .... = Multi-TID Aggregation Rx Support: 0
+                .... .... .... .... .... .... .... ...0 0... .... .... .... = HE Link Adaptation Support: No feedback if the STA does not provide HE MFB (0)
+                .... .... .... .... .... .... .... ..0. .... .... .... .... = All Ack Support: Not supported
+                .... .... .... .... .... .... .... .0.. .... .... .... .... = TRS Support: Not supported
+                .... .... .... .... .... .... .... 1... .... .... .... .... = BSR Support: Supported
+                .... .... .... .... .... .... ...0 .... .... .... .... .... = Broadcast TWT Support: Not supported
+                .... .... .... .... .... .... ..0. .... .... .... .... .... = 32-bit BA Bitmap Support: Not supported
+                .... .... .... .... .... .... .0.. .... .... .... .... .... = MU Cascading Support: Not supported
+                .... .... .... .... .... .... 0... .... .... .... .... .... = Ack-Enabled Aggregation Support: Not supported
+                .... .... .... .... .... ...0 .... .... .... .... .... .... = Reserved: 0x0
+                .... .... .... .... .... ..1. .... .... .... .... .... .... = OM Control Support: Supported
+                .... .... .... .... .... .0.. .... .... .... .... .... .... = OFDMA RA Support: Not supported
+                .... .... .... .... ...1 1... .... .... .... .... .... .... = Maximum A-MPDU Length Exponent Extension: 3
+                .... .... .... .... ..0. .... .... .... .... .... .... .... = Reserved: 0x0
+                .... .... .... .... .0.. .... .... .... .... .... .... .... = Flexible TWT Schedule Support: Not supported
+                .... .... .... .... 0... .... .... .... .... .... .... .... = Rx Control Frame to MultiBSS: Not supported
+                .... .... .... ...0 .... .... .... .... .... .... .... .... = BSRP BQRP A-MPDU Aggregation: Not supported
+                .... .... .... ..0. .... .... .... .... .... .... .... .... = QTP Support: Not supported
+                .... .... .... .1.. .... .... .... .... .... .... .... .... = BQR Support: Supported
+                .... .... .... 0... .... .... .... .... .... .... .... .... = PSR Responder: Not supported
+                .... .... ...0 .... .... .... .... .... .... .... .... .... = NDP Feedback Report Support: Not supported
+                .... .... ..0. .... .... .... .... .... .... .... .... .... = OPS Support: Not supported
+                .... .... .1.. .... .... .... .... .... .... .... .... .... = A-MSDU Not Under BA in Ack-Enabled A-MPDU Support: Supported
+                .... ..00 0... .... .... .... .... .... .... .... .... .... = Multi-TID Aggregation Tx Support: 0
+                .... .0.. .... .... .... .... .... .... .... .... .... .... = HE Subchannel Selective Transmission Support: Not supported
+                .... 0... .... .... .... .... .... .... .... .... .... .... = UL 2x996-tone RU Support: Not supported
+                ...1 .... .... .... .... .... .... .... .... .... .... .... = OM Control UL MU Data Disable RX Support: Supported
+                ..0. .... .... .... .... .... .... .... .... .... .... .... = HE Dynamic SM Power Save: Not supported
+                .0.. .... .... .... .... .... .... .... .... .... .... .... = Punctured Sounding Support: Not supported
+                0... .... .... .... .... .... .... .... .... .... .... .... = HT And VHT Trigger Frame RX Support: Not supported
+            HE PHY Capabilities Information
+                .... ...0 = Reserved: 0x0
+                    .... ...0 = Reserved: 0x0
+                0000 000. = Channel Width Set: 0x00
+                    .... ..0. = Reserved: 0x0
+                    .... .0.. = 40 & 80 MHz in the 5 GHz and 6 GHz bands: Not supported
+                    .... 0... = 160 MHz in the 5 GHz and 6 GHz bands: Not supported
+                    ...0 .... = 160/80+80 MHz in the 5 GHz and 6 GHz bands: Not supported
+                    ..0. .... = Reserved: 0x0
+                    .0.. .... = 242 tone RUs in the 5 GHz and 6 GHz bands: Not supported
+                    0... .... = Reserved: 0x0
+                Bits 8 to 23: 0xce20
+                    .... .... .... 0000 = Punctured Preamble Rx: 0x0
+                    .... .... ...0 .... = Device Class: Class B Device (0x0)
+                    .... .... ..1. .... = LDPC Coding In Payload: Supported
+                    .... .... .0.. .... = HE SU PPDU With 1x HE-LTF And 0.8us GI: Not supported
+                    .... ...0 0... .... = Midamble Tx/Rx Max NSTS: 1 Space-Time Stream (0x0)
+                    .... ..1. .... .... = NDP With 4x HE-LTF and 3.2us GI: Supported
+                    .... .1.. .... .... = STBC Tx <= 80 MHz: Supported
+                    .... 1... .... .... = STBC Rx <= 80 MHz: Supported
+                    ...0 .... .... .... = Doppler Tx: Not supported
+                    ..0. .... .... .... = Doppler Rx: Not supported
+                    .1.. .... .... .... = Full Bandwidth UL MU-MIMO: Supported
+                    1... .... .... .... = Partial Bandwidth UL MU-MIMO: Supported
+                Bits 24 to 39: 0x9392
+                    .... .... .... ..10 = DCM Max Constellation Tx: QPSK (0x2)
+                    .... .... .... .0.. = DCM Max NSS Tx: 1 Spatial Stream (0x0)
+                    .... .... ...1 0... = DCM Max Constellation Rx: QPSK (0x2)
+                    .... .... ..0. .... = DCM Max NSS Rx: 1 Spatial Stream (0x0)
+                    .... .... .0.. .... = Rx Partial BW SU In 20 MHz HE MU PPDU: Not supported
+                    .... .... 1... .... = SU Beamformer: Supported
+                    .... ...1 .... .... = SU Beamformee: Supported
+                    .... ..1. .... .... = MU Beamformer: Supported
+                    ...1 00.. .... .... = Beamformee STS <= 80 MHz: 0x4
+                    100. .... .... .... = Beamformee STS > 80 MHz: 0x4
+                Bits 40 to 55: 0xaf24
+                    .... .... .... .100 = Number Of Sounding Dimensions <= 80 MHz: 4
+                    .... .... ..10 0... = Number Of Sounding Dimensions > 80 MHz: 4
+                    .... .... .0.. .... = Ng = 16 SU Feedback: Not supported
+                    .... .... 0... .... = Ng = 16 MU Feedback: Not supported
+                    .... ...1 .... .... = Codebook Size SU Feedback: Supported
+                    .... ..1. .... .... = Codebook Size MU Feedback: Supported
+                    .... .1.. .... .... = Triggered SU Beamforming Feedback: Supported
+                    .... 1... .... .... = Triggered MU Beamforming Feedback: Supported
+                    ...0 .... .... .... = Triggered CQI Feedback: Not supported
+                    ..1. .... .... .... = Partial Bandwidth Extended Range: Supported
+                    .0.. .... .... .... = Partial Bandwidth DL MU-MIMO: Not supported
+                    1... .... .... .... = PPE Thresholds Present: True
+                Bits 56 to 71: 0x1114
+                    .... .... .... ...0 = PSR-based SR Support: Not supported
+                    .... .... .... ..0. = Power Boost Factor ar Support: Not supported
+                    .... .... .... .1.. = HE SU PPDU And HE MU PPDU With 4x HE-LTF And 0.8us GI: Supported
+                    .... .... ..01 0... = Max Nc: Supported
+                    .... .... .0.. .... = STBC Tx > 80 MHz: Not supported
+                    .... .... 0... .... = STBC Rx > 80 MHz: Not supported
+                    .... ...1 .... .... = HE ER SU PPDU With 4x HE-LTF And 0.8us GI: Supported
+                    .... ..0. .... .... = 20 MHz In 40 MHz HE PPDU In 2.4 GHz Band: Not supported
+                    .... .0.. .... .... = 20 MHz In 160/80+80 MHz HE PPDU: Not supported
+                    .... 0... .... .... = 80 MHz In 160/80+80 MHz HE PPDU: Not supported
+                    ...1 .... .... .... = HE ER SU PPDU With 1x HE-LTF And 0.8us GI: Supported
+                    ..0. .... .... .... = Midamble Tx/Rx 2x And 1x HE-LTF: Not supported
+                    00.. .... .... .... = DCM Max RU: 242-tone RU (0x0)
+                Bits 72 to 87: 0x000c
+                    .... .... .... ...0 = Longer Than 16 HE SIG-B OFDM Symbols Support: Not supported
+                    .... .... .... ..0. = Non-Triggered CQI Feedback: Not supported
+                    .... .... .... .1.. = Tx 1024-QAM Support < 242-tone RU Support: Supported
+                    .... .... .... 1... = Rx 1024-QAM Support < 242-tone RU Support: Supported
+                    .... .... ...0 .... = Rx Full BW SU Using HE MU PPDU With Compressed HE-SIG-B: Not supported
+                    .... .... ..0. .... = Rx Full BW SU Using HE MU PPDU With Non-Compressed HE-SIG-B: Not supported
+                    .... .... 00.. .... = Nominal Packet Padding: 0 µs for all constellations, Nss and RU allocations (0)
+                    .... ...0 .... .... = HE MU PPDU With More Than One RU Rx Max N_HE-LTF: 0
+                    0000 000. .... .... = Reserved: 0x00
+            Supported HE-MCS and NSS Set
+                Rx and Tx MCS Maps <= 80 MHz
+                    Rx HE-MCS Map <= 80 MHz: 0xffaa
+                        .... .... .... ..10 = Max HE-MCS for 1 SS: Support for HE-MCS 0-11 (0x2)
+                        .... .... .... 10.. = Max HE-MCS for 2 SS: Support for HE-MCS 0-11 (0x2)
+                        .... .... ..10 .... = Max HE-MCS for 3 SS: Support for HE-MCS 0-11 (0x2)
+                        .... .... 10.. .... = Max HE-MCS for 4 SS: Support for HE-MCS 0-11 (0x2)
+                        .... ..11 .... .... = Max HE-MCS for 5 SS: Not supported for HE PPDUs (0x3)
+                        .... 11.. .... .... = Max HE-MCS for 6 SS: Not supported for HE PPDUs (0x3)
+                        ..11 .... .... .... = Max HE-MCS for 7 SS: Not supported for HE PPDUs (0x3)
+                        11.. .... .... .... = Max HE-MCS for 8 SS: Not supported for HE PPDUs (0x3)
+                    Tx HE-MCS Map <= 80 MHz: 0xffaa
+                        .... .... .... ..10 = Max HE-MCS for 1 SS: Support for HE-MCS 0-11 (0x2)
+                        .... .... .... 10.. = Max HE-MCS for 2 SS: Support for HE-MCS 0-11 (0x2)
+                        .... .... ..10 .... = Max HE-MCS for 3 SS: Support for HE-MCS 0-11 (0x2)
+                        .... .... 10.. .... = Max HE-MCS for 4 SS: Support for HE-MCS 0-11 (0x2)
+                        .... ..11 .... .... = Max HE-MCS for 5 SS: Not supported for HE PPDUs (0x3)
+                        .... 11.. .... .... = Max HE-MCS for 6 SS: Not supported for HE PPDUs (0x3)
+                        ..11 .... .... .... = Max HE-MCS for 7 SS: Not supported for HE PPDUs (0x3)
+                        11.. .... .... .... = Max HE-MCS for 8 SS: Not supported for HE PPDUs (0x3)
+            PPE Thresholds
+                .... .011 = NSS: 3
+                .000 1... = RU Index Bitmask: 0x1
+                NSS 0
+                    RU allocation: 242
+                        PPET16: BPSK (0x00)
+                        PPET8: None (0x07)
+                NSS 1
+                    RU allocation: 242
+                        PPET16: BPSK (0x00)
+                        PPET8: None (0x07)
+                NSS 2
+                    RU allocation: 242
+                        PPET16: BPSK (0x00)
+                        PPET8: None (0x07)
+                NSS 3
+                    RU allocation: 242
+                        PPET16: BPSK (0x00)
+                        PPET8: None (0x07)
+        Ext Tag: HE Operation
+            Ext Tag length: 6 (Tag len: 7)
+            Ext Tag Number: HE Operation (36)
+            HE Operation Parameters: 0x003ff4
+                .... .... .... .... .... .100 = Default PE Duration: 4
+                .... .... .... .... .... 0... = TWT Required: Not required
+                .... .... ..11 1111 1111 .... = TXOP Duration RTS Threshold: 1023
+                .... .... .0.. .... .... .... = VHT Operation Information Present: False
+                .... .... 0... .... .... .... = Co-Hosted BSS: False
+                .... ...0 .... .... .... .... = ER SU Disable: False
+                .... ..0. .... .... .... .... = 6 GHz Operation Information Present: False
+                0000 00.. .... .... .... .... = Reserved: 0x00
+            BSS Color Information: 0x0d
+                ..00 1101 = BSS Color: 0x0d
+                .0.. .... = Partial BSS Color: False
+                0... .... = BSS Color Disabled: False
+            Basic HE-MCS and NSS Set: 0xfffc
+                .... .... .... ..00 = Max HE-MCS for 1 SS: Support for HE-MCS 0-7 (0)
+                .... .... .... 11.. = Max HE-MCS for 2 SS: Not supported for HE PPDUs (3)
+                .... .... ..11 .... = Max HE-MCS for 3 SS: Not supported for HE PPDUs (3)
+                .... .... 11.. .... = Max HE-MCS for 4 SS: Not supported for HE PPDUs (3)
+                .... ..11 .... .... = Max HE-MCS for 5 SS: Not supported for HE PPDUs (3)
+                .... 11.. .... .... = Max HE-MCS for 6 SS: Not supported for HE PPDUs (3)
+                ..11 .... .... .... = Max HE-MCS for 7 SS: Not supported for HE PPDUs (3)
+                11.. .... .... .... = Max HE-MCS for 8 SS: Not supported for HE PPDUs (3)
+        Ext Tag: Spatial Reuse Parameter Set
+            Ext Tag length: 1 (Tag len: 2)
+            Ext Tag Number: Spatial Reuse Parameter Set (39)
+            SR Control: 0x03
+                .... ...1 = SRP Disallowed: True
+                .... ..1. = NON-SRG OBSS PD SR Disallowed: True
+                .... .0.. = Non-SRG Offset Present: False
+                .... 0... = SRG Information Present: False
+                ...0 .... = HESIGA Spatial Reuse value 15 allowed: False
+                000. .... = Reserved: 0x0
+        Ext Tag: MU EDCA Parameter Set
+            Ext Tag length: 13 (Tag len: 14)
+            Ext Tag Number: MU EDCA Parameter Set (38)
+            QoS Information (AP): 0x00
+                .... 0000 = EDCA Parameter Set Update Count: 0x0
+                ...0 .... = Q-Ack: APs MIB attribute dot11QAckOptionImplemented is false
+                ..0. .... = Queue Request: AP cannot process a nonzero Queue Size subfield in the QoS Control field in QoS data frames
+                .0.. .... = TXOP Request: AP cannot process a nonzero TXOP Duration Requested subfield in the QoS Control field in QoS data frames
+                0... .... = More Data Ack: False
+            MUAC_BE Parameter Record
+                AIC/AIFSN: 0x00
+                    .... 0000 = AIFSN: 0
+                    ...0 .... = Admission Control Mandatory: No
+                    .00. .... = ACI: Best Effort (0)
+                    0... .... = Reserved: 0
+                ECWmin/ECWmax: 0xff
+                MU EDCA Timer: 0x00
+            MUAC_BK Parameter Record
+                AIC/AIFSN: 0x20
+                    .... 0000 = AIFSN: 0
+                    ...0 .... = Admission Control Mandatory: No
+                    .01. .... = ACI: Background (1)
+                    0... .... = Reserved: 0
+                ECWmin/ECWmax: 0xff
+                MU EDCA Timer: 0x00
+            MUAC_VI Parameter Record
+                AIC/AIFSN: 0x40
+                    .... 0000 = AIFSN: 0
+                    ...0 .... = Admission Control Mandatory: No
+                    .10. .... = ACI: Video (2)
+                    0... .... = Reserved: 0
+                ECWmin/ECWmax: 0xff
+                MU EDCA Timer: 0x00
+            MUAC_VO Parameter Record
+                AIC/AIFSN: 0x60
+                    .... 0000 = AIFSN: 0
+                    ...0 .... = Admission Control Mandatory: No
+                    .11. .... = ACI: Voice (3)
+                    0... .... = Reserved: 0
+                ECWmin/ECWmax: 0xff
+                MU EDCA Timer: 0x00
         Tag: FILS Indication
             Tag Number: FILS Indication (240)
             Tag length: 2
@@ -666,6 +894,134 @@ IEEE 802.11 Wireless Management
                 ..1. .... = SAE Hash to element: True
                 .0.. .... = SAE-PK: False
                 0... .... = Protected WUR Frame Support: False
+        Ext Tag: Multi-Link (802.11be D3.0)
+            Ext Tag length: 13 (Tag len: 14)
+            Ext Tag Number: Multi-Link (802.11be D3.0) (107)
+            Multi-Link Control: 0x0130 Basic
+                .... .... .... .000 = Type: Basic (0)
+                .... .... .... 0... = Reserved: 0x0
+                .... .... ...1 .... = Link ID Info Present: True
+                .... .... ..1. .... = BSS Parameters Change Count Present: True
+                .... .... .0.. .... = Medium Synchronization Delay Info Present: False
+                .... .... 0... .... = EML Capabilities Present: False
+                .... ...1 .... .... = MLD Capabilities Present: True
+                .... ..0. .... .... = AP MLD ID Present: False
+                .... .0.. .... .... = Extended MLD Capabilities and Operations Present: False
+                0000 0... .... .... = Reserved: 0x00
+            Common Info
+                Common Info Length: 11
+                MLD MAC Address: 00:ba:11:3c:aa:be (00:ba:11:3c:aa:be)
+                Link ID subfield: 0x01
+                    .... 0001 = Link ID: 0x1
+                    0000 .... = Reserved: 0x0
+                BSS Parameters Change Count: 0
+                MLD Capabilities: 0x0020
+                    .... .... .... 0000 = Maximum Number of Simultaneous Links: 0
+                    .... .... ...0 .... = SRS Support: False
+                    .... .... .01. .... = TID-To-Link Mapping Negotiation Support: 1
+                    .... 0000 0... .... = Frequency Separation For STR/AP MLD Type Indication: 0
+                    ...0 .... .... .... = AAR Support: False
+                    ..0. .... .... .... = Link Reconfiguration Operation Support: False
+                    .0.. .... .... .... = Aligned TWT Support: False
+                    0... .... .... .... = Reserved: 0x0
+            Basic STA Profile Count: 0
+        Ext Tag: EHT Capabilities (802.11be D3.0)
+            Ext Tag length: 14 (Tag len: 15)
+            Ext Tag Number: EHT Capabilities (802.11be D3.0) (108)
+            EHT MAC Capabilities Information: 0x0083, EPCS Priority Access Support, EHT OM Control Support, Maximum MPDU Length: 11 454, EHT Link Adaptation Support: No feedback
+                .... .... .... ...1 = EPCS Priority Access Support: Supported
+                .... .... .... ..1. = EHT OM Control Support: Supported
+                .... .... .... .0.. = Triggered TXOP Sharing Mode 1 Support: Not supported
+                .... .... .... 0... = Triggered TXOP Sharing Mode 2 Support: Not supported
+                .... .... ...0 .... = Restricted TWT Support: Not supported
+                .... .... ..0. .... = SCS Traffic Description Support: Not supported
+                .... .... 10.. .... = Maximum MPDU Length: 11 454 (0x2)
+                .... ...0 .... .... = Maximum A-MPDU Length Exponent Extension: 0
+                .... ..0. .... .... = EHT TRS Support: Not supported
+                .... .0.. .... .... = TXOP Return Support In TXOP Sharing Mode 2: Not supported
+                .... 0... .... .... = Two BQRs Support: Not supported
+                ..00 .... .... .... = EHT Link Adaptation Support: No feedback (0)
+                00.. .... .... .... = Reserved: 0x0
+            EHT PHY Capabilities Information
+                EHT PHY Bits 0-15: 0x0268
+                    .... .... .... ...0 = Reserved: 0x0
+                    .... .... .... ..0. = Support For 320 MHz in 6 GHz: Not supported
+                    .... .... .... .0.. = Support for 242-tone RU in BW Wider than 20 MHz: Not supported
+                    .... .... .... 1... = NDP With 4x EHT-LTF And 3.2 us GI: Supported
+                    .... .... ...0 .... = Partial Bandwidth UL MU-MIMO: Not supported
+                    .... .... ..1. .... = SU Beamformer: Supported
+                    .... .... .1.. .... = SU Beamformee: Supported
+                    .... ..10 0... .... = Beamformee SS (<= 80 MHz): 0x4
+                    ...0 00.. .... .... = Beamformee SS (= 160 MHz): 0x0
+                    000. .... .... .... = Beamformee SS (= 320 MHz): 0x0
+                EHT PHY Bits 16-31: 0x7e04
+                    .... .... .... .100 = Number Of Sounding Dimensions (<= 80 MHz): 0x4
+                    .... .... ..00 0... = Number Of Sounding Dimensions (= 160 MHz): 0x0
+                    .... ...0 00.. .... = Number Of Sounding Dimensions (= 320 MHz): 0x0
+                    .... ..1. .... .... = Ng = 16 SU Feedback: Supported
+                    .... .1.. .... .... = Ng = 16 MU Feedback: Supported
+                    .... 1... .... .... = Codebook Size = (4,2) SU Feedback: Supported
+                    ...1 .... .... .... = Codebook Size = (7,5) MU Feedback: Supported
+                    ..1. .... .... .... = Triggered SU Beamforming Feedback: Supported
+                    .1.. .... .... .... = Triggered MU Beamforming Partial BW Feedback: Supported
+                    0... .... .... .... = Triggered CQI Feedback: Not supported
+                EHT PHY Bits 32-39: 0x28
+                    .... ...0 = Partial Bandwidth DL MU-MIMO: Not supported
+                    .... ..0. = EHT PSR-Based SR support: Not supported
+                    .... .0.. = Power Boost Factor Support: Not supported
+                    .... 1... = EHT MU PPDU With 4x EHT-LTF and 0.8 us GI: Supported
+                    0010 .... = Max Nc: 2
+                EHT PHY Bits 40-63: 0x120860
+                    .... .... .... .... .... ...0 = Non-Triggered CQI Feedback: Not supported
+                    .... .... .... .... .... ..0. = Tx 1024-QAM & 4096-QAM < 242-tone RU Support: Not supported
+                    .... .... .... .... .... .0.. = Rx 1024-QAM & 4096-QAM < 242-tone-RU Support: Not supported
+                    .... .... .... .... .... 0... = PPE Thresholds Present: Not Present
+                    .... .... .... .... ..10 .... = Common Nominal Packet Padding: 2
+                    .... .... .... .000 01.. .... = Maximum Number Of Supported EHT-LTFs: 1
+                    .... .... .000 1... .... .... = Support Of MCS 15: 1
+                    .... .... 0... .... .... .... = Support Of EHT DUP (MCS 14) in 6 GHz: Not supported
+                    .... ...0 .... .... .... .... = Support For 20 MHz Operating STA Receiving NDP With Wider BW: Not supported
+                    .... ..1. .... .... .... .... = Non-OFDMA UL MU-MIMO (BW <= 80 MHz): Supported
+                    .... .0.. .... .... .... .... = Non-OFDMA UL MU-MIMO (BW = 160 MHz): Not supported
+                    .... 0... .... .... .... .... = Non-OFDMA UL MU-MIMO (BW = 320 MHz): Not supported
+                    ...1 .... .... .... .... .... = MU Beamformer (BW <= 80 MHz): Supported
+                    ..0. .... .... .... .... .... = MU Beamformer (BW = 160 MHz): Not supported
+                    .0.. .... .... .... .... .... = MU Beamformer (BW = 320 MHz): Not supported
+                    0... .... .... .... .... .... = TB Sounding Feedback Rate Limit: Not supported
+                EHT PHY Bits 64-71: 0x444400
+                    .... ...0 = Rx 1024-QAM In Wider Bandwidth DL OFDMA Support: Not supported
+                    .... ..0. = Rx 4096-QAM In Wider Bandwidth DL OFDMA SUpport: Not supported
+                    0000 00.. = Reserved: 0x00
+            Supported EHT-MCS and NSS Set
+                EHT-MCS Map (BW <= 80MHz): 0x444444
+                    .... .... .... .... .... 0100 = Rx Max Nss That Supports EHT-MCS 0-9: 4
+                    .... .... .... .... 0100 .... = Tx Max Nss That Supports EHT-MCS 0-9: 4
+                    .... .... .... 0100 .... .... = Rx Max Nss That Supports EHT-MCS 10-11: 4
+                    .... .... 0100 .... .... .... = Tx Max Nss That Supports EHT-MCS 10-11: 4
+                    .... 0100 .... .... .... .... = Rx Max Nss That Supports EHT-MCS 12-13: 4
+                    0100 .... .... .... .... .... = Tx Max Nss That Supports EHT-MCS 12-13: 4
+        Ext Tag: EHT Operation (802.11be D3.0)
+            Ext Tag length: 8 (Tag len: 9)
+            Ext Tag Number: EHT Operation (802.11be D3.0) (106)
+            EHT Operation Parameters: 0x01, EHT Operation Information Present
+                .... ...1 = EHT Operation Information Present: True
+                .... ..0. = Disabled Subchannel Bitmap Present: False
+                .... .0.. = EHT Default PE Duration: False
+                .... 0... = Group Addressed BU Indication Limit: False
+                ..00 .... = Group Addressed BU Indication Exponent: 0
+                00.. .... = Reserved: 0x0
+            Basic EHT-MCS And Nss Set: 0x00000011
+            Control: 0x00, Channel Width: 20 MHz EHT BSS bandwidth
+                .... .000 = Channel Width: 20 MHz EHT BSS bandwidth (0)
+                0000 0... = Reserved: 0x00
+            CCFS0: 0x00000080
+            CCFS1: 0x00000000
+        Tag: Vendor Specific: MediaTek Inc
+            Tag Number: Vendor Specific (221)
+            Tag length: 17
+            OUI: 00:0c:e7 (MediaTek Inc)
+            Vendor Specific OUI Type: 1
+            Vendor Specific Data: 0100000004080201000000000000
         Tag: Vendor Specific: MediaTek Inc
             Tag Number: Vendor Specific (221)
             Tag length: 7
